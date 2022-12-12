@@ -1,0 +1,122 @@
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.list {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.current {
+    color: $activebutton;
+}
+
+.link.current {
+    color: $activebutton;
+}
+
+body {
+    color: $maincolor;
+    font-family: $mainfont;
+}
+
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container-clients {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
+@media screen and (min-width: 480px) {
+    display: flex;
+    margin-left: auto;
+    width: 450px;
+}
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        width: 738px;
+    }
+
+        @media screen and (min-width:1200px) {
+            align-items: center;
+            display: flex;
+            width: 1170px;
+           }
+}
+
+.container-hero {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+//    phone screen 480px &
+        @media screen and (min-width: 480px) {
+            width: 480px;
+        }
+        
+//    tablets screen 768px &
+        @media screen and (min-width: 768px) {
+            width: 768px;
+        }
+        
+//    desktop screen 1200px &
+        @media screen and (min-width: 1200px) {
+        width: 1200px;
+        }
+
+}
+
+
+
+
+
+.container__button {
+    padding: 6px 22px;
+}
+
+.container-cards {
+    padding: 20px 24px;
+}
+
+.clients {
+    @extend %section;
+}
+
+.container__lines {
+    outline: solid 1px red;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+    
+}
+
+.list-container__lines {
+    content: "";
+    width: 24px;
+    height: 2.67px;
+    background-color: $blackcolor;
+    margin-bottom: 4px;
+}
