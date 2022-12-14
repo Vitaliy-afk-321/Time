@@ -1,6 +1,9 @@
 footer {
     background-color: $bgcolorfooter;
     padding: 60px 0;
+    @media screen and (min-width:480px) {
+            height: 603px;
+        }
 }
 
 .logo-footer {
@@ -44,7 +47,12 @@ footer {
 }
 
 .list-footer__adress {
-    padding-left: 0;
+    margin-bottom: 60px;
+    padding: 0;
+
+    @media screen and (min-width:1200px) {
+            padding-left: 0;
+        }
 }
 
 
@@ -52,8 +60,14 @@ footer {
 
 
 .footer {
-    display: flex;
-    align-items: baseline;
+   
+    text-align: center;
+        
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+            align-items: baseline;
+    }
 }
 
 .list-joinus__text {
@@ -67,11 +81,23 @@ footer {
 }
 
 .list-footer {
-    margin-right: 70px;
+    margin-right: 0;
+
+    @media screen and (min-width:480px) {
+            justify-content: center;
+        }
+    @media screen and (min-width:1200px) {
+        margin-right: 70px;
+    }
+
 }
 
 .list-joinus {
     padding: 0;
+    margin-bottom: 60px;
+    @media screen and (min-width:1200px) {
+            padding: 0;
+        }
 }
 
 
@@ -123,6 +149,7 @@ footer {
 
 .send-form__label {
     width: 358px;
+
 }
 
 
@@ -134,12 +161,19 @@ footer {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+    
 }
 
 .send-form {
-    display: flex;
-    align-content: center;
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
 }
+
+
 
 .send-form__input {
     width: 358px;
@@ -166,8 +200,17 @@ footer {
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     outline: none;
-   
-    }
+        }
+         @media screen and (min-width: 480px) {
+            margin-bottom: 20px;
+        }
+        @media screen and (min-width: 768px) {
+            display: block;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+        }
 }
 
 
@@ -205,7 +248,11 @@ footer {
         box-shadow);
     
     }
-
+           @media screen and (min-width: 480px) {
+                display: flex;
+                margin-left: auto;
+                margin-right: auto;
+           }
 }
 
 .send-form__icon {
